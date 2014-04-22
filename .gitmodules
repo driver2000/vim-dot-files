@@ -91,6 +91,6 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = git://github.com/scrooloose/snipmate-snippets.git
-[submodule "/Users/diervolino/.vim/bundle/bufexplorer"]
-	path = /Users/diervolino/.vim/bundle/bufexplorer
+[submodule "bundle/bufexplorer"]
+	path = bundle/bufexplorer
 	url = https://github.com/jlanzarotta/bufexplorer.git
