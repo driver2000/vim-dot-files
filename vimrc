@@ -8,10 +8,6 @@
 " For pathogen.vim: auto load all plugins in .vim/bundle
 
 let g:pathogen_disabled = []
-if !has('gui_running')
-   call add(g:pathogen_disabled, 'powerline')
-endif
-
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -34,22 +30,19 @@ filetype plugin on    " Enable filetype-specific plugins
 " auto reload vimrc when editing it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
-
-syntax on		" syntax highlight
 set number
 set hlsearch		" search highlighting
 set background=dark
-let g:rehash256 = 1
+
 if has("gui_running")	" GUI color and font settings
   set guifont=Osaka-Mono:h20
-  set t_Co=256          " 256 color mode
   set cursorline        " highlight current line
   colors moria
   highlight CursorLine          guibg=#003853 ctermbg=24  gui=none cterm=none
 else
 " terminal color settings
-  set t_Co=256          " 256 color mode
   colors molokai
+  let g:rehash256 = 1
 endif
 
 set clipboard=unnamed	" yank to the system register (*) by default
@@ -333,7 +326,9 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompile c
 
 " --- vim-gitgutter
 let g:gitgutter_enabled = 1
-set t_Co=256
+ 
+set t_Co=256          " 256 color mode
+
 
 " --- PowerLine
 let g:airline_powerline_fonts = 1
