@@ -330,7 +330,7 @@ let g:gitgutter_enabled = 1
 set t_Co=256          " 256 color mode
 
 " --- Remove trailing whitespace when saving a file
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre *.py :%s/\s\+$//e
 
 " --- PowerLine
 let g:airline_powerline_fonts = 1
