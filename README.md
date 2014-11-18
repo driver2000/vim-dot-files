@@ -3,6 +3,47 @@ vim-dot-files
 Vim configuration files
 Forked from  https://github.com/vgod/vimrc.
 
+
+ONE-STEP INSTALL
+----------------
+Use curl (for Mac OS X):
+
+`curl -o - https://raw.github.com/driver2000/vim-dot-files/master/auto-install.sh | sh`
+
+or wget (for most UNIX platforms):
+
+`wget -O - https://raw.github.com/driver2000/vim-dot-files/master/auto-install.sh | sh`
+
+MANUALLY INSTALL
+----------------
+Check out from github
+
+```
+git clone git://github.com/driver2000/vim-dot-files.git ~/.vim
+cd ~/.vim
+git submodule update --init
+Install ~/.vimrc and ~/.gvimrc
+```
+
+`./install-vimrc.sh`
+(Optional, if you want Command-T) Compile the Command-T plugin
+
+```
+cd .vim/bundle/command-t/ruby/command-t
+ruby extconf.rb
+make
+```
+
+
+
+
+
+
+
+
+
+
+
 Vim Visual Cheat Sheet
 ----------------------
 
