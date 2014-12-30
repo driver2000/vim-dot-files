@@ -54,6 +54,9 @@ set wildmenu            " wild char completion menu
 " ignore these files while expanding wild chars
 set wildignore=*.o,*.class,*.pyc
 
+" add ctags
+set tags+=$HOME/.vim/tags
+
 set autoindent		" auto indentation
 set incsearch		" incremental search
 set nobackup		" no *~ backup files
@@ -230,8 +233,6 @@ if has("autocmd") && exists("+omnifunc")
 endif
 
 set cot-=preview "disable doc preview in omnicomplete
-
-set tags+=$HOME/sp/srs/ROnline/RHard/Python/tags
 
 " make CSS omnicompletion work for SASS and SCSS
 autocmd BufNewFile,BufRead *.scss             set ft=scss.css
