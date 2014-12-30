@@ -231,6 +231,8 @@ endif
 
 set cot-=preview "disable doc preview in omnicomplete
 
+set tags+=$HOME/sp/srs/ROnline/RHard/Python/tags
+
 " make CSS omnicompletion work for SASS and SCSS
 autocmd BufNewFile,BufRead *.scss             set ft=scss.css
 autocmd BufNewFile,BufRead *.sass             set ft=sass.css
