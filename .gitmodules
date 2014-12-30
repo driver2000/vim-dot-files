@@ -92,10 +92,6 @@
 	path = bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
         ignore = dirty
-[submodule "bundle/zencoding-vim"]
-	path = bundle/zencoding-vim
-	url = http://github.com/mattn/zencoding-vim.git
-        ignore = dirty
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
@@ -124,3 +120,6 @@
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
         ignore = dirty
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
