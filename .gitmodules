@@ -46,10 +46,6 @@
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
         ignore = dirty
-[submodule "bundle/javacomplete"]
-	path = bundle/javacomplete
-	url = https://github.com/vim-scripts/javacomplete
-        ignore = dirty
 [submodule "bundle/scala-vim-support"]
 	path = bundle/scala-vim-support
 	url = https://github.com/vgod/scala-vim-support.git
