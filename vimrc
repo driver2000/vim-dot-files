@@ -36,7 +36,8 @@ set background=dark
 
 if has("gui_running")	" GUI color and font settings
   set cursorline        " highlight current line
-  colors moria
+  set guifont=Fantasque\ Sans\ Mono\ 12
+  colors solarized
   highlight CursorLine          guibg=#003853 ctermbg=24  gui=none cterm=none
 else
 " terminal color settings
@@ -333,6 +334,10 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 
 " --- PowerLine
 let g:airline_powerline_fonts = 1
-let g:airline_theme= "powerlineish"
+if has("gui_running")	" GUI color and font settings
+   let g:airline_theme= "solarized"
+else
+   let g:airline_theme= "powerlineish"
+endif
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
