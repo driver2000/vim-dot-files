@@ -8,7 +8,7 @@
 " For pathogen.vim: auto load all plugins in .vim/bundle
 
 let g:pathogen_disabled = []
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 call pathogen#helptags()
 
 " General Settings
